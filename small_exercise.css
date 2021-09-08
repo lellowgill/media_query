@@ -1,0 +1,29 @@
+@media screen and (min-width: 1100px) {
+    .box-of-boxes .box-one{
+        width: 200px;
+    }
+    .box-of-boxes .box-three{
+        height: 400px;
+    }
+} 
+@media screen and (max-width: 720px){
+    .box-of-boxes .box-two{
+        background-color: blue;
+    }
+    .box-of-boxes .box-three{
+        background-color: green;
+    }
+}
+@media screen and (min-width: 720px) and (max-width: 1100px){
+    .box-of-boxes .box-four{
+        width: 100px;
+    }
+    .box-of-boxes .box-one, .box-two, .box-three, .box-four{
+        height: 300px;
+        
+        }
+}    
+.box-of-boxes{
+    display: flex;
+    flex-wrap: wrap;
+}
