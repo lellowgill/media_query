@@ -20,5 +20,10 @@
     }
     .box-of-boxes .box-one, .box-two, .box-three, .box-four{
         height: 300px;
-    }
+        
+        }
 }    
+.box-of-boxes{
+    display: flex;
+    flex-wrap: wrap;
+}
