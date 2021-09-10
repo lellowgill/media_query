@@ -1,0 +1,12 @@
+.container {
+    position: relative;
+  }
+  .text {
+    font-family:cursive;
+    font-size: 50px; color: greenyellow;
+    padding: 30px;
+    background-color: hsla(0, 100%, 90%, 0.3); 
+    position: absolute;
+    top: 150px;
+    left: 150px;
+  } 
