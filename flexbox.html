@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Holy Grail Layout</title>
+    <style>
+      body {
+        font-family:fantasy;
+        margin: 0;
+        font-size: 20px;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        margin: 0;
+      }
+
+      .header,
+      .footer,
+      .main,
+      .sidebar-left,
+      .sidebar-right {
+        padding: 20px;
+      }
+
+      .header,
+      .footer {
+        background-color: #83caff;
+        font-style:italic;
+        font-family: cursive;
+      }
+
+      .sidebar-left,
+      .sidebar-right {
+        background-color: #cb99cc;
+      }
+
+      .main {
+        background-color: #ffcccc;
+      }
+
+      .layout {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .content {
+        display: flex;
+        flex: 1;
+      }
+
+      .sidebar-left {
+        order: 1;
+        width: 30%;
+      }
+
+      .main {
+        order: 2;
+      }
+
+      .sidebar-right {
+        order: 3;
+        width: 20%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <header class="header">
+        <h1>Monestier-de-Clermont</h1>
+      </header>
+      <section class="content">
+        <main class="main">
+          <h2>Content</h2>
+          <p>
+            Moncler is an Italian luxury fashion brand mostly known for its skiwear. Founded in 1952 by René Ramillon and André Vincent,[3] Moncler took its name from the abbreviation of Monestier-de-Clermont, an Alpine town near Grenoble, France. The brand was bought by Italian entrepreneur Remo Ruffini in 2003, transforming and reinventing the near-bankrupt company,[4] and listing it on the Milan Stock Exchange in 2013. In December 2020, Moncler purchased a 100% stake of Italian luxury sportswear brand Stone Island in a reported €1.15 billion acquisition.[5]
+          </p>
+          <p>
+            The name is an abbreviation of Monestier-de-Clermont, a village in the mountains near Grenoble, France.[6] The first quilted jackets were conceived for protecting workers from the cold. They used the jackets on top of their overalls in the small mountain establishment.[7]
+
+The first to note them and realize their potential was French mountaineer Lionel Terray. The result saw the specialist range "Moncler pour Lionel Terray".[8]
+
+In 1954, Moncler quilted jackets were chosen to equip the Italian expedition to K2, which culminated with the conquest of the earth's second-highest summit by Achille Compagnoni and Lino Lacedelli.[9][10] Moncler also accompanied the French expedition which reached the summit of Makalu in 1955[11] and was the official supplier for expeditions in Alaska organised by Lionel Terray in 1964.[12] On occasion of the Grenoble Winter Olympics in 1968,[13][14] Moncler became the official supplier of the French national downhill skiing team.[13]
+
+In 2003, Moncler was bought out by Italian entrepreneur Remo Ruffini, chairman and CEO, who was to introduce the strategy of the global quilted jacket.[15]
+          </p>
+          <p>
+            An IPO of Moncler on the Milan Stock Exchange took place on 16 December 2013, with an initial value of €10.20 per share.[16] The shares were 27 times oversubscribed and rose 47% on the first day, resulting in a market capitalization of more than €4 billion.[17][16][18]
+
+In February 2018 Moncler launched the Moncler Genius project, a new creative and business model where well-known designers create distinct collections interpreting Moncler's identity that are released on a monthly basis.[19][20][21]
+
+
+          </p>
+        </main>
+        <aside class="sidebar-left">
+          <h3>Menu</h3>
+          <ul>
+            <li>Blog</li>
+            <li>Menu</li>
+            <li>History</li>
+            <li>About</li>
+            <li>Dates</li>
+          </ul>
+        </aside>
+        <aside class="sidebar-right">
+          <h4>Ad</h4>
+          <h4>Ad</h4>
+          <h4>Ad</h4>
+        </aside>
+      </section>
+      <footer class="footer">
+        <h1>FIN</h1>
+      </footer>
+    </div>
+  </body>
+</html>
