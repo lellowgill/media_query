@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" type="text/css" href="navigation_bar.css">
+        <title>Flexbox Navbar Exercise Solution</title>
+
+        <style>
+            .nav-bar {
+                background-color: turquoise;
+                display: flex;
+                justify-content: space-between;
+                padding: 0 20px;   
+            }
+            .nav-bar-menu {
+                display: flex;
+                line-height: 1;
+                list-style-type:none;
+                margin: 0;
+            }
+            .nav-bar-item {
+                padding: 10;
+                font-weight: 10px 5px;
+                color: white;
+            }
+            .nav-bar a {
+                color: white;
+                text-decoration: none;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="nav-bar">
+            <div class="nav-bar-item">Company Name</div>
+            <ul class="nav-bar-menu">
+                <li class="nav-bar_tiem"><a href="#">Home</a></li>
+                <li class="nav-bar_tiem"><a href="#">Products</a></li>
+                <li class="nav-bar_tiem"><a href="#">About</a></li>
+                <li class="nav-bar_tiem"><a href="#">Careers</a></li>
+                <li class="nav-bar_tiem"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="layout">
+            <h1>Input Add-ons Exercise</h1>
+            <label for="name">Name</label>
+            <div class="input-container">
+              <input
+                type="text"
+                id="name"
+                class="input-field"
+                placeholder="Enter your name"
+              />
+              <button class="input-addon">Submit</button>
+            </div>
+    
+            <label for="price">Price</label>
+            <div class="input-container">
+              <div class="input-addon">$</div>
+              <input
+                type="text"
+                id="price"
+                class="input-field"
+                placeholder="Enter the price"
+              />
+            </div>
+      
+            <!-- Both -->
+            <label for="handle">Handle</label>
+            <div class="input-container">
+              <div class="input-addon">@</div>
+              <input
+                type="text"
+                id="handle"
+                class="input-field"
+                placeholder="Enter the handle"
+              />
+              <button class="input-addon">Search</button>
+            </div>
+          </div>
+    </body>
+</html>
