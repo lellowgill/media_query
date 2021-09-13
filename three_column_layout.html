@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Three Column Layout</title>
+    </head>
+    <style>
+        body {
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            height: 700px;
+
+        }
+        .column {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .red {
+            background-color: #ff5f5f;
+        }
+        .blue {
+            background-color: #5fafff;
+        }
+        .yellow {
+            background-color: #ffff5f;
+        }
+        .purple {
+            background-color: purple;
+        }
+        .orchid {
+            background-color: orchid;
+        }
+        .aqua-marine {
+            background-color: aquamarine;
+        }
+        .number {
+            font-size: 50px;
+        }        
+    </style>
+    <body>
+        <div class="container">
+            <div class="red column"><div class="number">1</div></div>
+            <div class="blue column"><div class="number">2</div></div>
+            <div class="yellow column"><div class="number">3</div></div>
+            <div class="purple column"><div class="number">4</div></div>
+            <div class="orchid column"><div class="number">5</div></div>
+            <div class="aqua-marine column"><div class="number">6</div></div>
+
+         </div>
+    </body>
+</html>
