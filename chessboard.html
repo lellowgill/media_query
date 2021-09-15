@@ -6,10 +6,16 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Chessboard 5x5 Grid Solution</title>
         <style>
+            
             .chessboard {
                 display: flex;
                 flex-wrap: wrap;
-                width: 800px;
+                width: 800px;    
+            }
+            @media screen and (min-width: 320px) and (max-width: 480px){
+                .chessboard {
+                    background: antiquewhite;
+                }
             }
             .row {
                 display: flex;
